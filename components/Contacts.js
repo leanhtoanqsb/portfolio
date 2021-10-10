@@ -14,7 +14,7 @@ export default function Contacts() {
         </a>
         <a href='https://www.linkedin.com/in/toanleqsb/' className={styles.button}>
           <i className="bi bi-linkedin"></i>
-          <span>Let&#39s connect<br/><b>LinkedIn</b></span>
+          <span>Let's connect<br/><b>LinkedIn</b></span>
         </a>
       </div>
     </section>
