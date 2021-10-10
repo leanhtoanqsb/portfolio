@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <>
       <section id='projects' className={styles.projects_section}>
-        <h1>Projecst</h1>
+        <h1>Projects</h1>
         <div className={styles.project}>
           <div className={styles.project_info}>
             <h2>Webtoon UI</h2>

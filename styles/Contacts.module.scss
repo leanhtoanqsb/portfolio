@@ -3,9 +3,10 @@
 
 .contacts_section {
   @include container;
+  background: black;
 
   h1 {
-    font-size: $large-heading;
+    @include gradient-heading;
   }
 
   .contacts_container {

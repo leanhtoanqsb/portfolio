@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <>
     <section id='skills' className={styles.skills_section}>
-      <h1>Skills</h1>
+      <h1 className={styles.main_heading}>Skills</h1>
       <div className={styles.skills_container}>
         <div className={`${styles.image_container} ${styles.html}`}>
           <div className={styles.html_offset}/>

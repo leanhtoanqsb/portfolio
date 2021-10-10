@@ -6,16 +6,8 @@
 
   background: black;
 
-  p {
-    @include gradient-text;
-    font-size: $medium-heading;
-    font-weight: 900;
-  }
-
-  @media (min-width: 600px) {
-    p {
-      font-size: $large-heading;
-    }
+  h1 {
+    @include gradient-heading;
   }
 }
 

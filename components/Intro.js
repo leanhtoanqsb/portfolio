@@ -5,8 +5,8 @@ export default function Intro() {
   return (
     <>
       <section id='intro' className={styles.intro_section}>
-        <p>Hello, I'm</p>
-        <p>Toan Le</p>
+        <h1>Hello, I'm</h1>
+        <h1>Toan Le</h1>
         <div className={styles.buttons}>
           <a
             href='#projects'
