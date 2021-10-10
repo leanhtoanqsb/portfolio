@@ -1,0 +1,58 @@
+@import 'styles/_config.scss';
+@import 'styles/_common.scss';
+
+.projects_section {
+  @include container;
+
+  background: white;
+
+  h1 {
+    font-size: $large-heading;
+  }
+
+  .project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .project_info {
+      background: white;
+      border: 1px solid red;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+
+      h2 {
+        font-size: $medium-heading;
+      }
+      & > span {
+        display: inline-block;
+        font-size: $medium-paragraph;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: $large-paragraph;
+        margin-bottom: 0.25rem;
+      }
+    }
+
+    .slideshow {
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(to right, #753a88, #cc2b5e);
+    }
+    @media (min-width: 600px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-top: 2.5rem;
+
+      .project_info {
+        flex-shrink: 0;
+        width: 200px;
+      }
+      .slideshow {
+      }
+    }
+  }
+}

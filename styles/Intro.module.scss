@@ -1,0 +1,37 @@
+@import 'styles/_config.scss';
+@import 'styles/_common.scss';
+
+.intro_section {
+  @include container;
+
+  background: black;
+
+  p {
+    @include gradient-text;
+    font-size: $medium-heading;
+    font-weight: 900;
+  }
+
+  @media (min-width: 600px) {
+    p {
+      font-size: $large-heading;
+    }
+  }
+}
+
+.buttons {
+  @include button-container;
+
+  margin-top: 2rem;
+
+  .button {
+    @include round-button;
+    background: $dark-gray;
+    color: white;
+
+    i {
+      @include gradient-text;
+    }
+  }
+
+}

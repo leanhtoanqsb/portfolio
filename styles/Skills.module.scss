@@ -1,0 +1,92 @@
+@import 'styles/_config.scss';
+@import 'styles/_common.scss';
+
+@mixin flex_center_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.skills_section {
+  @include container;
+
+  h1 {
+    font-size: $large-heading;
+  }
+
+  .skills_container {
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    grid-gap: 2rem 2rem;
+    grid-template-columns: auto auto;
+
+    $image-size: 200px;
+
+    .image_container {
+      width: $image-size;
+      height: $image-size;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .html {
+      img {
+        height: $image-size;
+      }
+      .html_offset {
+        width: $image-size;
+        height: $image-size;
+        position: absolute;
+        border-radius: 50%;
+        border:20px solid  #e44d26;
+      }
+    }
+
+    .css {
+      img {
+        height: $image-size;
+      }
+      .css_offset {
+        width: $image-size;
+        height: $image-size;
+        position: absolute;
+        border-radius: 50%;
+        border:20px solid  #379ad6;
+      }
+    }
+
+    .javascript {
+      background: #f7df1e;
+      img {
+        height: $image-size*15/20;
+      }
+    }
+
+    .react {
+      background: #2a2c2e;
+      img {
+        height: $image-size*17/20;
+      }
+    }
+
+    .webpack {
+      background: #222222;
+      img {
+        height: $image-size*13/20;
+      }
+    }
+    @media (min-width: 600px) {
+      grid-template-columns: auto auto auto auto;
+    }
+    @media (min-width: 1200px) {
+      grid-template-columns: auto auto auto auto auto auto;
+    }
+  }
+}
+

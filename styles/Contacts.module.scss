@@ -1,0 +1,31 @@
+@import 'styles/_config.scss';
+@import 'styles/_common.scss';
+
+.contacts_section {
+  @include container;
+
+  h1 {
+    font-size: $large-heading;
+  }
+
+  .contacts_container {
+    @include button-container;
+    margin-top: 2rem;
+
+    .button {
+      @include square-button;
+
+      background: $dark-gray;
+      color: white;
+
+      span {
+        text-align: center;
+      }
+
+      i {
+        @include gradient-text;
+        font-size: 3rem;
+      }
+    }
+  }
+}
