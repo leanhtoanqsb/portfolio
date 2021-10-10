@@ -9,12 +9,12 @@ export default function Contacts() {
       <h1>Contacts</h1>
       <div className={styles.contacts_container}>
         <a href='mailto:toanqsb@gmail.com' className={styles.button}>
-          <i class="bi bi-envelope"></i>
+          <i className="bi bi-envelope"></i>
           <span>Write me<br/><b>E-mail</b></span>
         </a>
         <a href='https://www.linkedin.com/in/toanleqsb/' className={styles.button}>
-          <i class="bi bi-linkedin"></i>
-          <span>Let's connect<br/><b>LinkedIn</b></span>
+          <i className="bi bi-linkedin"></i>
+          <span>Let&#39s connect<br/><b>LinkedIn</b></span>
         </a>
       </div>
     </section>
