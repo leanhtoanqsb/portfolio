@@ -1,0 +1,23 @@
+.webtoon_nav {
+  .logo {
+  }
+}
+
+.main_banner_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_banner_inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.banner_big_inner {
+  transition: opacity 2s;
+  position: absolute;
+  width: auto;
+  top: 0;
+  left: 0;
+}
+

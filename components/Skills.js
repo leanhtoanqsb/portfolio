@@ -21,6 +21,9 @@ export default function Skills() {
         <div className={`${styles.image_container} ${styles.react}`}>
           <img src='images/react.png' />
         </div>
+        <div className={`${styles.image_container} ${styles.python}`}>
+          <img src='images/python.png' />
+        </div>
         <div className={`${styles.image_container} ${styles.webpack}`}>
           <img src='images/webpack.png' />
         </div>

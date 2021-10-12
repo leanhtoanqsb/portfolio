@@ -72,6 +72,8 @@
   align-items: center;
   justify-content: space-between;
 
+  @include button-transform;
+
   span {
     display: inline-block;
     margin-bottom: 0.125rem;
@@ -95,6 +97,8 @@
   justify-content: space-between;
   gap: 0.5rem;
 
+  @include button-transform;
+
   span {
     display: inline-block;
     margin-bottom: 0.125rem;
@@ -105,6 +109,12 @@
   }
 }
 
+@mixin button-transform {
+  transition: transform 0.5s;
+  &:hover {
+    transform: translate(0, -8px);
+  }
+}
 
 @mixin button-container {
   width: 100%;
