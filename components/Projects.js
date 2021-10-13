@@ -1,5 +1,6 @@
 import styles from 'styles/Projects.module.scss'
 import Webtoon from 'components/projects/Webtoon'
+import Flashcard from 'components/projects/Flashcard'
 
 export default function Projects() {
   return (
@@ -31,6 +32,7 @@ export default function Projects() {
             <p>Used: <b><i>ReactJs, Hooks, HTML, CSS, Python Django, RestAPI </i></b><span>and depploy React app to </span><b><i>Netlify, </i></b><span>depploy RestAPI to </span><b><i>Heroku</i></b></p>
           </div>
           <div className={styles.slideshow}>
+            <Flashcard />
           </div>
         </div>
       </section>

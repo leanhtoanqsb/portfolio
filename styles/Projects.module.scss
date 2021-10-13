@@ -39,7 +39,6 @@
       position: relative;
       flex-shrink: 0;
       flex-grow: 1;
-      background: linear-gradient(to right, #753a88, #cc2b5e);
     }
     @media (min-width: #{$screen-md}) {
       flex-direction: row;

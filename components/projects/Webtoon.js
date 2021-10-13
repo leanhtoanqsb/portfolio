@@ -29,8 +29,6 @@ function Webtoon() {
     )
   },[bannerRef]);
 
-  console.log(width)
-
   const [index, setIndex] = useState([1, 0]);
   const timeoutRef = useRef(null);
 
