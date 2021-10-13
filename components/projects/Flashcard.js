@@ -1,7 +1,5 @@
-import { useState, useEffect } from 'react'
 import { debounce } from 'lodash'
 import styles from 'styles/projects/Flashcard.module.scss'
-import useRect from 'hooks/useRect'
 
 function Flashcard() {
 
@@ -52,22 +50,4 @@ function Card({term, meaning}) {
     </div>
     </>
   )
-}
-function rest() {
-  const [width, setWidth] = useState(0);
-
-  const ref = {current: null};
-
-  useEffect(() => {
-    const format = debounce((node) => {
-      if (node != null ) {
-        let sourceNode = node.getBoundingClientRect();
-        let sourceWidth = sourceNode.width
-        setWidth(() => sourceWidth)
-      }
-    }, 100)
-    window.addEventListener('resize', format(ref.current));
-    return (() => window.removeEventListener('resize', format(ref.current))
-    )
-  },[ref]);
 }

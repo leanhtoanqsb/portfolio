@@ -14,7 +14,7 @@ function Webtoon() {
   const DELAY = 3000;
   const [width, setWidth] = useState(0);
 
-  let bannerRef = {current: null};
+  let bannerRef = useCallback(() => {current: null}, []);
 
   useEffect(() => {
     const formatWidth = debounce((node) => {
