@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "styles/projects/Webtoon.module.scss";
 import {debounce} from "lodash";
 
-function Webtoon() {
+export default function Webtoon() {
   const images = [
     { id: 1, src: "/images/webtoon/banner-1.png" },
     { id: 2, src: "/images/webtoon/banner-2.png" },
@@ -14,20 +14,21 @@ function Webtoon() {
   const DELAY = 3000;
   const [width, setWidth] = useState(0);
 
-  let bannerRef = useCallback(() => {current: null}, []);
+  let bannerRef = useRef(null);
 
   useEffect(() => {
-    const formatWidth = debounce((node) => {
-      if (node != null ) {
-        let sourceNode = node.getBoundingClientRect();
+    const formatWidth = debounce(() => {
+      if (bannerRef.current != null ) {
+        let sourceNode = bannerRef.current.getBoundingClientRect();
         let sourceWidth = sourceNode.width
-        setWidth(() => sourceWidth)
+        setWidth(sourceWidth)
       }
     }, 100)
-    window.addEventListener('resize', formatWidth(bannerRef.current));
-    return (() => window.removeEventListener('resize', formatWidth(bannerRef.current))
+    window.addEventListener('resize', formatWidth);
+    formatWidth();
+    return (() => window.removeEventListener('resize', formatWidth)
     )
-  },[bannerRef]);
+  },[]);
 
   const [index, setIndex] = useState([1, 0]);
   const timeoutRef = useRef(null);
@@ -94,7 +95,7 @@ function Webtoon() {
         </div>
       </nav>
       <div
-        ref={(el) => {bannerRef.current = el}}
+        ref={bannerRef}
         className={styles.main_banner_wrap}
         style={{
           height: width/1.7,
@@ -109,5 +110,3 @@ function Webtoon() {
     </>
   );
 }
-
-export default Webtoon;

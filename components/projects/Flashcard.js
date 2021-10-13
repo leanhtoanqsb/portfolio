@@ -1,7 +1,7 @@
 import { debounce } from 'lodash'
 import styles from 'styles/projects/Flashcard.module.scss'
 
-function Flashcard() {
+export default function Flashcard() {
 
   return (
     <>
@@ -17,9 +17,9 @@ function Flashcard() {
             <div className={styles.nav_margin_bot} />
             <div  className={styles.card_container}>
               <div  className={styles.card_slide}>
-                <Card term='Classroom' meaning='Lop hoc' />
+                <Card term='Potato' meaning='Khoai tay' />
                 <Card term='Mushroom' meaning='Nam' />
-                <Card term='Washroom' meaning='Toilet' />
+                <Card term='Clery' meaning='Can tay' />
               </div>
             </div>
           </div>
@@ -27,7 +27,6 @@ function Flashcard() {
     </>
   )
 }
-export default Flashcard
 
 function Card({term, meaning}) {
   return (
