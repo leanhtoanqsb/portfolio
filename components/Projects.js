@@ -9,7 +9,9 @@ export default function Projects() {
         <h1>Projects</h1>
         <div className={styles.project}>
           <div className={styles.project_info}>
-            <h2>Webtoon UI</h2>
+            <a href='https://webtoonui.netlify.app' target='_blank' rel="noreferrer">
+              <h2>Webtoon UI</h2>
+            </a>
             <span><i>Personal project</i></span>
             <p>Create a website whose interface looks like the Webtoon website</p>
             <p>Compose the interface with React component, use React Router to navigate</p>
@@ -22,7 +24,9 @@ export default function Projects() {
         </div>
         <div className={styles.project}>
           <div className={styles.project_info}>
-            <h2>Flashcard</h2>
+            <a href='https://fcweb.netlify.app' target='_blank' rel="noreferrer">
+              <h2>Flashcard</h2>
+            </a>
             <span><i>Personal project</i></span>
             <p>Create a website that stores terms and its meaning</p>
             <p>Used Material UI to create React component</p>
