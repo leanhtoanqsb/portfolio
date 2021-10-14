@@ -16,7 +16,7 @@ export default function Projects() {
             <p>Create a website whose interface looks like the Webtoon website</p>
             <p>Compose the interface with React component, use React Router to navigate</p>
             <p>Improve performance buy using Developer tools, React lazy</p>
-            <p>Used: <b><i>ReactJs, Hooks, HTML, CSS, Webpack </i></b><span>and depploy to </span><b><i>Netlify</i></b></p>
+            <p>Used: <b><i>ReactJs, Hooks, HTML, CSS </i></b><span>and depploy to </span><b><i>Netlify</i></b></p>
           </div>
           <div className={styles.slideshow}>
             <Webtoon />
