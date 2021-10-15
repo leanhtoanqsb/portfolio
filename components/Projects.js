@@ -14,9 +14,9 @@ export default function Projects() {
             </a>
             <span><i>Personal project</i></span>
             <p>Create a website whose interface looks like the Webtoon website.</p>
-            <p>Used ReactJS to create component, use React Router to navigate between pages.</p>
+            <p>Used ReactJS to create components, use React Router to navigate between pages.</p>
             <p>Improve performance by using Developer tools, React lazy.</p>
-            <p>Used: <b><i>ReactJs, Hooks, HTML, CSS module </i></b><span>and depploy to </span><b><i>Netlify</i></b></p>
+            <p>Used: <b><i>ReactJs, Hooks, HTML, CSS module </i></b><span>and deploy to </span><b><i>Netlify</i></b></p>
           </div>
           <div className={styles.slideshow}>
             <Webtoon />
@@ -29,11 +29,11 @@ export default function Projects() {
             </a>
             <span><i>Personal project</i></span>
             <p>Create a website that stores terms and its meaning.</p>
-            <p>Used ReactJS, MaterialUI to create component, use React Router to navigate between pages.</p>
+            <p>Used ReactJS, MaterialUI to create components, use React Router to navigate between pages.</p>
             <p>Create a simple RestAPI with Python Django REST, deploy the API to Heroku.</p>
             <p>Used Redux Toolkit to send and retrieve data from API, store this data in Redux store as global props.</p>
             <p>Make this app a PWAs.</p>
-            <p>Used: <b><i>ReactJs, Hooks, HTML, CSS, Python Django REST </i></b><span>and depploy React app to </span><b><i>Netlify, </i></b><span>depploy RestAPI to </span><b><i>Heroku.</i></b></p>
+            <p>Used: <b><i>ReactJs, Hooks, HTML, CSS, Python Django REST, </i></b><span>and deploy React app to </span><b><i>Netlify, </i></b><span>deploy RestAPI to </span><b><i>Heroku.</i></b></p>
           </div>
           <div className={styles.slideshow}>
             <Flashcard />
